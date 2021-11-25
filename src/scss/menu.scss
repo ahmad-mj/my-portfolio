@@ -1,0 +1,38 @@
+@import "../global.scss";
+
+.menu {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+    background-color: $darkColor;
+    transition: all 1s ease;
+    &.active {
+        left: 0;
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-size: 30px;
+        font-weight: 100;
+        width: 60%;
+        li {
+            margin-bottom: 30px;
+
+            a {
+                text-decoration: none;
+                font-size: inherit;
+                color: #fff;
+            }
+            &:hover {
+                font-weight: 600;
+            }
+        }
+    }
+}
